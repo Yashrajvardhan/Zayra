@@ -1,0 +1,35 @@
+<section class="container py-5">
+  <!-- Heading -->
+  <h2 class="fw-bold text-center mb-2">Women's Collection</h2>
+  <p class="text-center text-muted mb-5">
+    Discover our exquisite range of women's apparel, from elegant dresses
+    to comfortable everyday wear. Find your perfect ensemble.
+  </p>
+
+  <!-- Product grid -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <div class="col" *ngFor="let product of products">
+      <div class="card h-100 border-0 shadow-sm">
+        <img
+          [src]="product.image"
+          [alt]="product.name"
+          class="card-img-top object-fit-cover"
+        />
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title fw-semibold mb-1">{{ product.name }}</h6>
+          <p class="text-primary fw-bold mb-3">
+            {{ product.price | currency : 'USD' : 'symbol' : '1.0-2' }}
+          </p>
+
+          <!-- CTA -->
+          <button
+            class="btn soft-purple-btn w-100 mt-auto"
+            (click)="addToCart(product)"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

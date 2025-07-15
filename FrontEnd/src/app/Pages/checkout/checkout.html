@@ -1,0 +1,152 @@
+<div class="container py-5">
+  <h3 class="text-center mb-5 fw-bold">Secure Checkout</h3>
+  <div class="row">
+    <!-- Left Column: Shipping & Payment Info -->
+    <div class="col-lg-8">
+      <!-- Shipping Info -->
+      <div class="border rounded p-4 mb-4 bg-light">
+        <h5 class="mb-3">Shipping Information</h5>
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label>Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your full name">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label>Address Line 1</label>
+            <input type="text" class="form-control" placeholder="Enter your address">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label>Address Line 2 (Optional)</label>
+            <input type="text" class="form-control" placeholder="Enter your Address Line 2">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label>City</label>
+            <input type="text" class="form-control" placeholder="Enter your city">
+          </div>
+          <div class="col-md-6">
+            <label>State </label>
+            <input type="text" class="form-control" placeholder="State">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label>Pin Code</label>
+            <input type="text" class="form-control" placeholder="Enter your pin code">
+          </div>
+          <div class="col-md-6">
+            <label>Country</label>
+            <select class="form-select">
+              <option>Select Country</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>Phone Number</label>
+          <input type="text" class="form-control" placeholder="Enter your phone number">
+        </div>
+      </div>
+
+      <!-- Payment Info -->
+      <div class="border rounded p-4 bg-light">
+        <h5 class="mb-3">Payment Information</h5>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="payment" id="card" checked>
+          <label class="form-check-label" for="card">Credit/Debit Card</label>
+        </div>
+
+        <div class="mb-3">
+          <label>Card Number</label>
+          <input type="text" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+        </div>
+
+        <div class="mb-3">
+          <label>Card Holder Name</label>
+          <input type="text" class="form-control" placeholder="Enter card holder name">
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label>Expiration Month</label>
+            <select class="form-select">
+              <option>MM</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label>Expiration Year</label>
+            <select class="form-select">
+              <option>YYYY</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>CVV</label>
+          <input type="text" class="form-control" placeholder="XXX">
+        </div>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="payment" id="upi">
+          <label class="form-check-label" for="upi">UPI</label>
+        </div>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="payment" id="cod">
+          <label class="form-check-label" for="cod">Cash on Delivery</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="sameAddress">
+          <label class="form-check-label" for="sameAddress">Billing address same as shipping</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Summary -->
+    <div class="col-lg-4">
+      <div class="border rounded p-4 bg-light">
+        <h5 class="mb-4">Order Summary</h5>
+
+        <div class="d-flex justify-content-between mb-2">
+          <span>Summer Dress (x1)</span>
+          <span>₹39.99</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Men's Casual Shirt (x1)</span>
+          <span>₹29.99</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Subtotal</span>
+          <span>₹69.98</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Shipping</span>
+          <span>₹5.00</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Discount</span>
+          <span>−₹0.00</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between fw-bold fs-5 text-primary mb-3">
+          <span>Total</span>
+          <span>₹74.98</span>
+        </div>
+        <button class="btn btn-primary w-100">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>

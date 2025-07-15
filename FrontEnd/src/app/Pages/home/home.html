@@ -1,0 +1,142 @@
+<!-- =========================
+     HERO BANNER
+========================== -->
+<div class="position-relative text-center text-white">
+  <img
+    src="assets/Homepage.jpeg" 
+    class="img-fluid w-100"
+    alt="Woman holding shopping bags"
+    style="height: 420px; object-fit: cover;"
+  />
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <h1 class="display-5 fw-bold mb-2">Discover Your Style</h1>
+    <p class="lead mb-4">Shop the latest trends in fashion for everyone.</p>
+    <a routerLink="/products" class="btn btn-primary px-4">Shop Now</a>
+  </div>
+</div>S
+
+<!-- 
+     SHOP BY CATEGORY -->
+
+<div class="container py-5">
+  <h2 class="text-center mb-4 fw-semibold">Shop by Category</h2>
+
+  <div class="row g-4">
+    <!-- Men -->
+    <div class="col-12 col-md-4">
+      <a routerLink="/category/men" class="text-decoration-none">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="assets/img/cat-men.jpg" class="card-img-top" alt="Men category" />
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-0">Men</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Women -->
+    <div class="col-12 col-md-4">
+      <a routerLink="/category/women" class="text-decoration-none">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src=" " class="card-img-top" alt="Women category" />
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-0">Women</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Kids -->
+    <div class="col-12 col-md-4">
+      <a routerLink="/category/kids" class="text-decoration-none">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src=" " class="card-img-top" alt="Kids category" />
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-0">Kids</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+<!-- =========================
+     FEATURED PRODUCTS
+========================== -->
+<div class="container py-5">
+  <h2 class="text-center mb-4 fw-semibold">Featured Products</h2>
+
+  <div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src=" " class="card-img-top" alt="Classic Denim Jacket" />
+        <div class="card-body text-center">
+          <h6 class="mb-1 fw-semibold">Classic Denim Jacket</h6>
+          <p class="mb-2 fw-semibold">$79.99</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src=" " class="card-img-top" alt="Elegant Summer Dress" />
+        <div class="card-body text-center">
+          <h6 class="mb-1 fw-semibold">Elegant Summer Dress</h6>
+          <p class="mb-2 fw-semibold">$54.50</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="assets/img/prod-kids-tee.jpg" class="card-img-top" alt="Kids' Graphic Tee" />
+        <div class="card-body text-center">
+          <h6 class="mb-1 fw-semibold">Kids' Graphic Tee</h6>
+          <p class="mb-2 fw-semibold">$22.00</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="..." class="card-img-top" alt="Sporty Sneakers" />
+        <div class="card-body text-center">
+          <h6 class="mb-1 fw-semibold">Sporty Sneakers</h6>
+          <p class="mb-2 fw-semibold">$89.99</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================
+     NEWSLETTER SIGN‑UP
+========================== -->
+<section class="py-5" style="background-color:#e8e3ff;">
+  <div class="container text-center">
+    <h3 class="mb-3 fw-semibold">Stay Updated with Zayra</h3>
+    <p class="mb-4">Sign up for our newsletter to get the latest updates, exclusive offers, and more.</p>
+
+    <form class="d-flex justify-content-center flex-wrap">
+      <input
+        type="email"
+        class="form-control w-auto me-2 mb-2"
+        placeholder="Enter your email address"
+        required
+      />
+      <button class="btn btn-primary mb-2" type="submit">Subscribe</button>
+    </form>
+  </div>
+  <h2>Product List</h2>
+   
+  @for(product of data; track product.id){
+    <li>{{product}}</li>
+}
+</section>
